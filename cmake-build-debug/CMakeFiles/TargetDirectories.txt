@@ -1,3 +1,8 @@
 C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/CMakeFiles/Vectors.dir
 C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
+C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
+C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/libs/dataStructures/CMakeFiles/dataStructures.dir
+C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/libs/dataStructures/CMakeFiles/edit_cache.dir
+C:/Users/Worker/CLionProjects/gitHub/cmake-build-debug/libs/dataStructures/CMakeFiles/rebuild_cache.dir

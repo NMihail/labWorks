@@ -2,3 +2,6 @@
 1	97	7024090597041170	CMakeFiles/Vectors.dir/libs/dataStructures/vector/vector.c.obj	52431d814c1f543e
 1	133	7024082018854463	CMakeFiles/Vectors.dir/main.c.obj	9cbdee423064d4b7
 98	205	7024090598291565	Vectors.exe	1e79038f42f4ac47
+1	95	7024099578366149	libs/dataStructures/CMakeFiles/dataStructures.dir/vector/vector.c.obj	59b6bed19e101487
+95	228	7024099579896494	libs/dataStructures/libdataStructures.a	2bc1196df90f09d2
+228	367	7024099581246798	Vectors.exe	e500dc8edd9b3333
