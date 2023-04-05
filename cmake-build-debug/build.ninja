@@ -55,12 +55,6 @@ build CMakeFiles/Vectors.dir/main.c.obj: C_COMPILER__Vectors_Debug C$:/Users/Wor
   OBJECT_DIR = CMakeFiles\Vectors.dir
   OBJECT_FILE_DIR = CMakeFiles\Vectors.dir
 
-build CMakeFiles/Vectors.dir/libs/dataStructures/vector/vector.c.obj: C_COMPILER__Vectors_Debug C$:/Users/Worker/CLionProjects/gitHub/libs/dataStructures/vector/vector.c || cmake_object_order_depends_target_Vectors
-  DEP_FILE = CMakeFiles\Vectors.dir\libs\dataStructures\vector\vector.c.obj.d
-  FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\Vectors.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vectors.dir\libs\dataStructures\vector
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Vectors
@@ -69,7 +63,7 @@ build CMakeFiles/Vectors.dir/libs/dataStructures/vector/vector.c.obj: C_COMPILER
 #############################################
 # Link the executable Vectors.exe
 
-build Vectors.exe: C_EXECUTABLE_LINKER__Vectors_Debug CMakeFiles/Vectors.dir/main.c.obj CMakeFiles/Vectors.dir/libs/dataStructures/vector/vector.c.obj
+build Vectors.exe: C_EXECUTABLE_LINKER__Vectors_Debug CMakeFiles/Vectors.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Vectors.dir

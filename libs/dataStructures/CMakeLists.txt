@@ -3,7 +3,4 @@ project(Vectors C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_library(data_structures
-
-        vector/vector.h vector/vector.c
-        )
+add_executable(Vectors ../../main.c)
