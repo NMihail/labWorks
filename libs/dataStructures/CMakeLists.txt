@@ -1,2 +1,2 @@
 add_library(dataStructures
-            vector/vector.h vector/vector.c)
+        vectors/vector.h vectors/vector.c)

@@ -86,13 +86,13 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "libs/dataStructures/vector/vector.h",
+			"path" : "libs/dataStructures/vectors/vector.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libs/dataStructures/vector/vector.c",
+			"path" : "libs/dataStructures/vectors/vector.c",
 			"sourceGroupIndex" : 1
 		}
 	],
