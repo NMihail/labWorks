@@ -144,6 +144,12 @@ build libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vector.c.obj: C_
   OBJECT_DIR = libs\dataStructures\CMakeFiles\dataStructures.dir
   OBJECT_FILE_DIR = libs\dataStructures\CMakeFiles\dataStructures.dir\vectors
 
+build libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/testVectors.c.obj: C_COMPILER__dataStructures_Debug C$:/Users/Worker/CLionProjects/gitHub/libs/dataStructures/vectors/testVectors.c || cmake_object_order_depends_target_dataStructures
+  DEP_FILE = libs\dataStructures\CMakeFiles\dataStructures.dir\vectors\testVectors.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = libs\dataStructures\CMakeFiles\dataStructures.dir
+  OBJECT_FILE_DIR = libs\dataStructures\CMakeFiles\dataStructures.dir\vectors
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target dataStructures
@@ -152,7 +158,7 @@ build libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vector.c.obj: C_
 #############################################
 # Link the static library libs\dataStructures\libdataStructures.a
 
-build libs/dataStructures/libdataStructures.a: C_STATIC_LIBRARY_LINKER__dataStructures_Debug libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vector.c.obj
+build libs/dataStructures/libdataStructures.a: C_STATIC_LIBRARY_LINKER__dataStructures_Debug libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vector.c.obj libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/testVectors.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = libs\dataStructures\CMakeFiles\dataStructures.dir
   POST_BUILD = cd .
