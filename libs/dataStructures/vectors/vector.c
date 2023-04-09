@@ -62,10 +62,6 @@ void shrinkToFit(Vector *v) {
 
 void deleteVector(Vector *v) {
     free(v->data);
-
-    v->size = 0;
-
-    v->capacity = 0;
 }
 
 bool isEmpty(Vector *v) {
@@ -93,11 +89,13 @@ void pushBack(Vector *v, int x) {
 }
 
 void popBack(Vector *v) {
+    assert(v->size > 0);
+
     v->size--;
 }
 
 int* atVector(Vector v, size_t index) {
-    if (index > v.size) {
+    if (index >= v.size) {
         fprintf(stderr, "\"IndexError: a[%zu] is not exists\"", index);
 
         exit(1);

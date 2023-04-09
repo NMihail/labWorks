@@ -64,12 +64,6 @@ void shrinkToFitVoid(VectorVoid *v) {
 
 void deleteVectorVoid(VectorVoid *v) {
     free(v->data);
-
-    v->size = 0;
-
-    v->capacity = 0;
-
-    v->baseTypeSize = 0;
 }
 
 bool isEmptyVoid(VectorVoid *v) {
@@ -81,7 +75,11 @@ bool isFullVoid(VectorVoid *v) {
 }
 
 void getVectorValueVoid(VectorVoid *v, size_t index, void *destination) {
-    assert(index < v->size);
+    if (index >= v->size) {
+        fprintf(stderr, "\"IndexError: a[%zu] is not exists\"", index);
+
+        exit(1);
+    }
 
     char *source = (char *)(v->data) + index*v->baseTypeSize;
 
@@ -89,20 +87,24 @@ void getVectorValueVoid(VectorVoid *v, size_t index, void *destination) {
 }
 
 void setVectorValueVoid(VectorVoid *v, size_t index, void *source) {
-    if (index >= v->capacity) {
-        reserveVoid(v, index + 1);
+    v->size++;
+
+    if (index >= v->size) {
+        v->size--;
+
+        fprintf(stderr, "\"IndexError: a[%zu] is not exists\"", index);
+
+        exit(1);
     }
 
     char *dst = (char *)(v->data) + index*v->baseTypeSize;
 
     memcpy(dst, source, v->baseTypeSize);
-
-    if (v->size <= index) {
-        v->size = index + 1;
-    }
 }
 
 void popBackVoid(VectorVoid *v) {
+    assert(v->size > 0);
+
     v->size--;
 }
 

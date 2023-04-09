@@ -100,6 +100,37 @@ void test_front_oneElementInVector() {
     deleteVector(&v);
 }
 
+void test_pushBackVoid_and_setVectorValueVoid_and_getVectorValueVoid() {
+    VectorVoid vInt = createVectorVoid(0, sizeof(int));
+    VectorVoid vFloat = createVectorVoid(0, sizeof(float));
+
+    int a = 2;
+    float b = (float)4.23;
+
+    pushBackVoid(&vInt, &a);
+    pushBackVoid(&vFloat, &b);
+
+    int vIntFirst;
+    getVectorValueVoid(&vInt, 0, &vIntFirst);
+
+    float vFloatFirst;
+    getVectorValueVoid(&vFloat, 0, &vFloatFirst);
+
+    assert(vIntFirst == a);
+    assert(vFloatFirst - b < EPS_FLOAT);
+
+    b = (float)3.11;
+
+    setVectorValueVoid(&vFloat, 0, &b);
+
+    getVectorValueVoid(&vFloat, 0, &vFloatFirst);
+
+    assert(vFloatFirst - b < EPS_FLOAT);
+
+    deleteVectorVoid(&vInt);
+    deleteVectorVoid(&vFloat);
+}
+
 void tests_vector() {
     test_pushBack_emptyVector();
     test_pushBack_fullVector();
@@ -108,4 +139,5 @@ void tests_vector() {
     test_atVector_requestToLastElement();
     test_back_oneElementInVector();
     test_front_oneElementInVector();
+    test_pushBackVoid_and_setVectorValueVoid_and_getVectorValueVoid();
 }
