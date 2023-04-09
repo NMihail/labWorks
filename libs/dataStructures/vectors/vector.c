@@ -39,7 +39,7 @@ void reserve(Vector *v, size_t newCapacity) {
         return;
     }
 
-    int *data = (int *)realloc(v->data, newCapacity);
+    int *data = (int *)realloc(v->data, newCapacity* sizeof(int));
 
     if (data == NULL) {
         badAlloc();
