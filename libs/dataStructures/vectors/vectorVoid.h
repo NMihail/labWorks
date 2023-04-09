@@ -16,7 +16,7 @@ typedef struct vectorVoid {
                          // то поле baseTypeSize = sizeof(int)
                          // если вектор хранит float -
                          // то поле baseTypeSize = sizeof(float)
-} vectorVoid;
+} VectorVoid;
 
 
 
