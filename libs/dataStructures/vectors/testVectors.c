@@ -5,7 +5,7 @@
 #include "testVectors.h"
 
 void test_pushBack_emptyVector() {
-    Vector v = createVector(5);
+    Vector v = createVector(0);
 
     pushBack(&v, 0);
     pushBack(&v, 1);
@@ -99,8 +99,6 @@ void test_front_oneElementInVector() {
 
     deleteVector(&v);
 }
-
-
 
 void tests_vector() {
     test_pushBack_emptyVector();

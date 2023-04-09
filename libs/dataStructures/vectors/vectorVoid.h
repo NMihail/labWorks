@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <stdbool.h>
 #include <assert.h>
+#include <memory.h>
 
 typedef struct vectorVoid {
     void *data;          // указатель на нулевой элемент вектора
@@ -32,5 +33,17 @@ void clearVoid(VectorVoid *v);
 void shrinkToFitVoid(VectorVoid *v);
 
 void deleteVectorVoid(VectorVoid *v);
+
+bool isEmptyVoid(VectorVoid *v);
+
+bool isFullVoid(VectorVoid *v);
+
+void getVectorValueVoid(VectorVoid *v, size_t index, void *destination);
+
+void setVectorValueVoid(VectorVoid *v, size_t index, void *source);
+
+void popBackVoid(VectorVoid *v);
+
+void pushBackVoid(VectorVoid *v, void *source);
 
 #endif //VECTORS_VECTORVOID_H

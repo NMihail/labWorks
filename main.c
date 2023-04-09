@@ -3,7 +3,5 @@
 int main() {
     tests_vector();
 
-    VectorVoid v;
-
     return 0;
 }

@@ -8,6 +8,8 @@
 #include "vector.h"
 #include "vectorVoid.h"
 
+#define EPS_FLOAT 0.0000001
+
 void tests_vector();
 
 #endif //VECTORS_TESTVECTORS_H
