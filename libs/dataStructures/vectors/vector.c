@@ -11,9 +11,15 @@ void badAlloc() {
 }
 
 Vector createVector(size_t n) {
-    size_t size = n == 0 ? 1 : n;
+    if (!n) {
+        return (Vector) {
+            NULL,
+            0,
+            0
+        };
+    }
 
-    int *data = (int *)malloc(size * sizeof(int));
+    int *data = (int *) malloc(n* sizeof(int));
 
     if (data == NULL) {
         badAlloc();
@@ -22,20 +28,24 @@ Vector createVector(size_t n) {
     return (Vector) {
         data,
         0,
-        size
+        n
     };
 }
 
 void reserve(Vector *v, size_t newCapacity) {
-    size_t size = newCapacity == 0 ? 1 : newCapacity;
+    if (!newCapacity) {
+        *v = createVector(0);
 
-    int *data = (int *)realloc(v->data, size);
+        return;
+    }
+
+    int *data = (int *)realloc(v->data, newCapacity);
 
     if (data == NULL) {
         badAlloc();
     }
 
-    v->data = newCapacity ? data : v->data;
+    v->data = data;
 
     v->size = newCapacity < v->size ? newCapacity : v->size;
 
@@ -71,6 +81,10 @@ int getVectorValue(Vector *v, size_t i) {
 }
 
 void pushBack(Vector *v, int x) {
+    if (!v->capacity) {
+        reserve(v, 1);
+    }
+
     if (v->size == v->capacity) {
         reserve(v, v->capacity*2);
     }

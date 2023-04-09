@@ -1,8 +1,15 @@
 # ninja log v5
 1	97	7024090597041170	CMakeFiles/Vectors.dir/libs/dataStructures/vector/vector.c.obj	52431d814c1f543e
-2	74	7025590178225308	CMakeFiles/Vectors.dir/main.c.obj	9cbdee423064d4b7
 11	122	7025587665196377	libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vector.c.obj	3b437bb86274259d
-142	227	7025591781260854	Vectors.exe	e500dc8edd9b3333
+2	74	7025590178225308	CMakeFiles/Vectors.dir/main.c.obj	9cbdee423064d4b7
 8	169	7024162889193984	libs/dataStructures/CMakeFiles/dataStructures.dir/vector/vector.c.obj	59b6bed19e101487
+142	227	7025591781260854	Vectors.exe	e500dc8edd9b3333
 74	142	7025591780430668	libs/dataStructures/libdataStructures.a	49c25e51fdd5eccc
 1	74	7025591779730509	libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/testVectors.c.obj	4e530b0c667b9b15
+5	183	7027283458428198	build.ninja	eb9e443b3a3908e9
+15	164	7027283460298628	libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vectorVoid.c.obj	e2beb145247b445b
+1	184	7027283460498670	CMakeFiles/Vectors.dir/main.c.obj	9cbdee423064d4b7
+24	189	7027283460558683	libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/testVectors.c.obj	4e530b0c667b9b15
+7	195	7027283460618706	libs/dataStructures/CMakeFiles/dataStructures.dir/vectors/vector.c.obj	3b437bb86274259d
+195	277	7027283461451572	libs/dataStructures/libdataStructures.a	213871b7ea247164
+277	434	7027283462971918	Vectors.exe	e500dc8edd9b3333
