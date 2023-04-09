@@ -57,7 +57,7 @@ void clear(Vector *v) {
 }
 
 void shrinkToFit(Vector *v) {
-    reserve(v, v->size);
+    reserve(v, v->size* sizeof(int));
 }
 
 void deleteVector(Vector *v) {

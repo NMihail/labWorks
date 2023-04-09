@@ -20,7 +20,7 @@ VectorVoid createVectorVoid(size_t n, size_t baseTypeSize) {
         };
     }
 
-    int *data = (int *) malloc(n * baseTypeSize);
+    void *data = malloc(n * baseTypeSize);
 
     if (data == NULL) {
         badAlloc();
@@ -55,13 +55,19 @@ void reserveVoid(VectorVoid *v, size_t newCapacity) {
 }
 
 void clearVoid(VectorVoid *v) {
-
+    v->size = 0;
 }
 
 void shrinkToFitVoid(VectorVoid *v) {
-
+    reserveVoid(v, v->size*v->baseTypeSize);
 }
 
 void deleteVectorVoid(VectorVoid *v) {
+    free(v->data);
 
+    v->size = 0;
+
+    v->capacity = 0;
+
+    v->baseTypeSize = 0;
 }
