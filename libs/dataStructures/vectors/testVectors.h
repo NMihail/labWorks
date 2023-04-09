@@ -6,6 +6,7 @@
 #define VECTORS_TESTVECTORS_H
 
 #include "vector.h"
+#include "vectorVoid.h"
 
 void tests_vector();
 

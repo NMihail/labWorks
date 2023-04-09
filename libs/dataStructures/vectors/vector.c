@@ -4,15 +4,19 @@
 
 #include "vector.h"
 
+void badAlloc() {
+    fprintf(stderr, "bad alloc");
+
+    exit(1);
+}
+
 Vector createVector(size_t n) {
     size_t size = n == 0 ? 1 : n;
 
     int *data = (int *)malloc(size * sizeof(int));
 
     if (data == NULL) {
-        fprintf(stderr, "bad alloc");
-
-        exit(1);
+        badAlloc();
     }
 
     return (Vector) {
@@ -28,9 +32,7 @@ void reserve(Vector *v, size_t newCapacity) {
     int *data = (int *)realloc(v->data, size);
 
     if (data == NULL) {
-        fprintf(stderr, "bad alloc");
-
-        exit(1);
+        badAlloc();
     }
 
     v->data = newCapacity ? data : v->data;
